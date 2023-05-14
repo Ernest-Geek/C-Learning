@@ -49,6 +49,6 @@ This program was developed as a learning exercise and is inspired by basic subst
 
 ## Contact
 
-For any inquiries or questions, please contact [your email address].
+For any inquiries or questions, please contact [ernestampene1@gmail.com].
 
 Enjoy encrypting and decrypting messages with the Simple Substitution Cipher Cryptography Program!

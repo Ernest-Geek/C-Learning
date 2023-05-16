@@ -7,7 +7,7 @@ int main()
 {
 	char myString[21] = {0};//it stores the users input for encryption and decryption
 	int iSelection = 0;//it stores the users input for selection
-	int iRand;// It stores the users random numbers
+	char key[21] = {0}// Array to store user-defined key
         
 	srand(time(NULL));
 
@@ -42,28 +42,28 @@ int main()
 }
 
 //Function definition
-void encrypt(char sMessage[], int random)
+void encrypt(char sMessage[], char key[])
 {
 	int x = 0;
 
 	//encrypt the message by shifitng each character ASCII value
 	while (sMessage[x])
 	{
-	sMessage[x] += random;
+	sMessage[x] = sMessage[x] ^ key[x % keyLength];
 	x++;
 	}// end loop
 	x = 0;
 	//print the encrypted message
 	printf("\nEncrypted message is: ");
 }
-void decrypt(char sMessage[], int random)
+void decrypt(char sMessage[], char key[])
 {
 	int x = 0;
 
 	//decrypt the message by shifting each character ASCII value
 	while (sMessage[x])
 	{
-	sMessage[x] = sMessage[x] - random;
+	sMessage[x] = sMessage[x] ^ key[x % keyLength];
 	x++;
 	}//end loop
 	

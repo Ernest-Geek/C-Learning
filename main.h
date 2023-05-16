@@ -13,3 +13,7 @@ void printIntegerAddress(int *ptr);
 void printIntegerValue(int *ptr);
 #endif /* MAIN_H */
 /**End prototypes**/
+
+/**Function header for the dice game**/
+void tossDie(int dice_array[], int num_dice);
+/**End prototypes**/

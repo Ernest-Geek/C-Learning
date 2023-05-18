@@ -17,3 +17,12 @@ void printIntegerValue(int *ptr);
 /**Function header for the dice game**/
 void tossDie(int dice_array[], int num_dice);
 /**End prototypes**/
+
+/**Function header for string conversion**/
+void convertL(char *);
+void convertU(char *);
+/**End Prototypes**/
+
+/**Function header for word game**/
+void checkAnswer(char *, char []);
+/*End prototypes**/
